@@ -25,9 +25,13 @@ const ProductDetailPage = async ({ params }: PageProps) => {
   }
 
   return (
-    <main>
-      <h1>{product.title}</h1>
-      <p>{product.description}</p>
+    <main className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-50 to-white px-4 py-16">
+      <div className="bg-white rounded-2xl shadow-lg p-10 max-w-lg w-full">
+        <h1 className="text-3xl font-bold text-indigo-900 mb-6">
+          {product.title}
+        </h1>
+        <p className="text-lg text-gray-700">{product.description}</p>
+      </div>
     </main>
   );
 };
